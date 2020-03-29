@@ -11,7 +11,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Case.ViewCreator</RootNamespace>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -59,15 +59,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Office, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>..\..\..\packages\Office.12.0.0\lib\net40\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="RevitAPI">
-      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
+    <Reference Include="RevitAPI, Version=19.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\..\..\packages\Revit.RevitApi.x64.2019.0.0\lib\net45\RevitAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="RevitAPIUI">
-      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPIUI.dll</HintPath>
+    <Reference Include="RevitAPIUI, Version=19.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\..\..\packages\Revit.RevitApiUI.x64.2019.0.0\lib\net45\RevitAPIUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -104,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

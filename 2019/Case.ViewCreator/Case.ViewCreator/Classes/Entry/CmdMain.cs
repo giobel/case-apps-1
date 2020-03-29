@@ -30,11 +30,11 @@ namespace Case.ViewCreator.Entry
       {
 
         // Version
-        if (!commandData.Application.Application.VersionName.Contains("2019"))
-        {
-          message = "This Add-In was built for Revit 2019, please contact CASE for assistance...";
-          return Result.Failed;
-        }
+        //if (!commandData.Application.Application.VersionName.Contains("2019"))
+        //{
+        //  message = "This Add-In was built for Revit 2019, please contact CASE for assistance...";
+        //  return Result.Failed;
+        //}
 
         // Construct and Display the form
         form_Main frm = new form_Main(commandData);

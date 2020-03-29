@@ -24,24 +24,24 @@ Namespace Entry
 
       Try
 
-        ' Version
-        If Not commandData.Application.Application.VersionName.Contains("2019") Then
+                ' Version
+                'If Not commandData.Application.Application.VersionName.Contains("2019") Then
 
-          ' Failure
-          Using td As New TaskDialog("Cannot Continue")
-            With td
-              .TitleAutoPrefix = False
-              .MainInstruction = "Incompatible Version of Revit"
-              .MainContent = "This Add-In was built, please contact CASE for assistance."
-              .Show()
-            End With
-          End Using
-          Return Result.Cancelled
+                '  ' Failure
+                '  Using td As New TaskDialog("Cannot Continue")
+                '    With td
+                '      .TitleAutoPrefix = False
+                '      .MainInstruction = "Incompatible Version of Revit"
+                '      .MainContent = "This Add-In was built, please contact CASE for assistance."
+                '      .Show()
+                '    End With
+                '  End Using
+                '  Return Result.Cancelled
 
-        End If
+                'End If
 
-        ' Settings File
-        Dim m_s As New clsSettings(commandData, elements)
+                ' Settings File
+                Dim m_s As New clsSettings(commandData, elements)
         If m_s.ActiveDoc.IsFamilyDocument = True Then
           message = "Sorry, but only the subscription version supports parameter loading for family documents. Contact info@case-inc.com for information on how to get subscription tool licenses."
           Return Result.Failed

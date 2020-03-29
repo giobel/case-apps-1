@@ -7,7 +7,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Case.ViewportReporting</RootNamespace>
     <AssemblyName>Case.ViewportReporting</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <MyType>Custom</MyType>
