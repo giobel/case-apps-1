@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Case.Subs.Xyz</RootNamespace>
     <AssemblyName>Case.Subs.Xyz</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <MyType>Custom</MyType>
